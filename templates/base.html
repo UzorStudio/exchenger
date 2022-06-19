@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="static/semantic/semantic.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="static/semantic/semantic.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="ui inverted vertical masthead center aligned segment">
+    <div class="ui attached stackable menu">
+        <div class="ui container">
+            <a class="item" href="/">
+                <i class="home icon"></i>
+            </a>
+            <a class="item" href="/tikets">
+                <i class="align justify icon"></i> My ticket
+            </a>
+
+            <a class="item right" href="/">
+                <h2>Double Exchanger</h2>
+            </a>
+
+
+        </div>
+    </div>
+
+
+    <div class="ui container">
+
+        {% block main %}
+        {% endblock %}
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<form method="post">
+    <div class="ui inverted segment" style="margin-top:10%; margin-bottom:33%;">
+        <div class="ui inverted form">
+
+
+            <div class="ui center aligned container segment">
+
+                <div class="ui three column grid container">
+                    <div class="column">
+                        From
+                        <div class="ui segment"><h2 class="ui header">{{ticet.count}} {{ticet.coinDrop}} </h2></div>
+                    </div>
+                    <div class="column">
+                        You will receive
+                        <div class="ui segment"><h2 class="ui header">{{ticet.price}} {{ticet.coinGet}}</h2></div>
+                    </div>
+                    <div class="column">
+                        Ticket status
+                        <div class="ui segment"><h2 class="ui header">{{ticet.status}}</h2></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+    </div>
+
+
+</form>
+{% endblock %}

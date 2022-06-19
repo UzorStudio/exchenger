@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<form method="post">
+    <div class="ui inverted segment" style="margin-top:10%; margin-bottom:33%;">
+    <div class="ui inverted form">
+        <div class="three fields">
+            <div class="field">
+
+                <select name="coindrop" class="ui fluid dropdown">
+                    <option value="BTC">BTC</option>
+                    <option value="LTC">LTC</option>
+                    <option value="TRX">TRX</option>
+                    <option value="ETH">ETH</option>
+                    <option value="ZEC">ZEC</option>
+                    <option value="XTZ">XTZ</option>
+                    <option value="XRP">XRP</option>
+                    <option value="XML">XML</option>
+                    <option value="XMR">XMR</option>
+                    <option value="DASH">DASH</option>
+                    <option value="DOGE">DOGE</option>
+                    <option value="BCH">BCH</option>
+                    <option value="ETC">ETC</option>
+                    <option value="ADA">ADA</option>
+                    <option value="ARC">ARC</option>
+                    <option value="VET">VET</option>
+                    <option value="XEM">XEM</option>
+                </select>
+            </div>
+            <div class="field">
+
+                <div class="field">
+                    <input type="number" name="countdrop" placeholder="Count">
+                </div>
+            </div>
+
+            <div class="field">
+
+                <select name="coinget" class="ui fluid dropdown">
+                    <option value="BTC">BTC</option>
+                    <option value="LTC">LTC</option>
+                    <option value="TRX">TRX</option>
+                    <option value="ETH">ETH</option>
+                    <option value="ZEC">ZEC</option>
+                    <option value="XTZ">XTZ</option>
+                    <option value="XRP">XRP</option>
+                    <option value="XML">XML</option>
+                    <option value="XMR">XMR</option>
+                    <option value="DASH">DASH</option>
+                    <option value="DOGE">DOGE</option>
+                    <option value="BCH">BCH</option>
+                    <option value="ETC">ETC</option>
+                    <option value="ADA">ADA</option>
+                    <option value="ARC">ARC</option>
+                    <option value="VET">VET</option>
+                    <option value="XEM">XEM</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="field">
+            <label>You'r wallet addres</label>
+            <div class="field">
+                <input type="text" name="wallet">
+            </div>
+        </div>
+
+        <div class="ui form">
+            <div class="two fields">
+                <div class="field">
+                    <label>Email</label>
+                    <input name="email" type="text">
+                </div>
+                <div class="field">
+                    <label>Telegram</label>
+                    <input name="telegram" type="text">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="inline field">
+            <div class="ui checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>I agree to the terms and conditions</label>
+            </div>
+        </div>
+        <button type="submit" class="ui submit button">Calculate</button>
+    </div>
+</div>
+
+
+</form>
+{% endblock %}
